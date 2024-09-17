@@ -9,15 +9,19 @@ const Search: React.FC<Props> = ({ onSearch }) => {
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setValue(e.target.value);
-
     onSearch(e.target.value);
   }
 
   return (
-    <div className="text-center border">
-      <h1>Search</h1>
-
-      <input placeholder="Search" value={value} onChange={handleChange} />
+    <div className="flex fixed right-0">
+      <div className="bg-blue-200 flex m-0 ml-auto py-5 pr-5 pl-5">
+        <input
+          className="p-2 h-[40px] outline-none"
+          placeholder="Search"
+          value={value}
+          onChange={handleChange}
+        />
+      </div>
     </div>
   );
 };

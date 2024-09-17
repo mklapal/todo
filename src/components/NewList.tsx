@@ -26,11 +26,38 @@ const NewList: React.FC<Props> = ({ onCreate }) => {
   }
 
   return (
-    <div className="text-center border">
-      <h1>Create new list</h1>
+    <div className="flex">
+      <div className="bg-blue-500 flex m-auto py-5 px-5">
+        <div className="text-white px-5 m-auto">Create new list</div>
 
-      <input required value={name} placeholder="Name" onChange={changeInput} />
-      <button onClick={createList}>Create</button>
+        <input
+          className="p-2 h-[40px] outline-none"
+          required
+          value={name}
+          placeholder="Name"
+          onChange={changeInput}
+        />
+
+        <div
+          className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4"
+          onClick={createList}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
   );
 };

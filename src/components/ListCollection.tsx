@@ -44,20 +44,22 @@ const ListColl: React.FC<Props> = ({ coll, onUpdate, onDelete }) => {
     <div>
       <Search onSearch={onSearch} />
 
-      {visibleTodos.length > 0 ? (
-        <>
-          {visibleTodos.map((list: TodoModel) => (
-            <List
-              model={list}
-              key={list.id}
-              onUpdate={onUpdate}
-              onDelete={onDelete}
-            />
-          ))}
-        </>
-      ) : (
-        <div>You don't have any lists</div>
-      )}
+      <div className="">
+        {visibleTodos.length > 0 ? (
+          <>
+            {visibleTodos.map((list: TodoModel) => (
+              <List
+                model={list}
+                key={list.id}
+                onUpdate={onUpdate}
+                onDelete={onDelete}
+              />
+            ))}
+          </>
+        ) : (
+          <div className="text-gray-500 p-20">You don't have any todos</div>
+        )}
+      </div>
     </div>
   );
 };

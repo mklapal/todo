@@ -38,13 +38,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>TODO lists</h1>
+      <header className="flex flex-row justify-between bg-gray-700 items-center">
+        <div className="text-xl font-bold text-white ml-5">
+          TODO lists in React / Michal Klapal
+        </div>
+        <NewList onCreate={listCreate} />
       </header>
 
       <section>
-        <NewList onCreate={listCreate} />
-
         <ListCollection
           coll={todos}
           onUpdate={listUpdate}
