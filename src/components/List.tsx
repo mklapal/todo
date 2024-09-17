@@ -43,7 +43,7 @@ const List: React.FC<Props> = ({ model, onUpdate, onDelete }) => {
   function updateItem(item: TodoItemModel) {
     const newItems = [...model.items];
 
-    newItems[newItems.findIndex((x) => x.id == item.id)] = item;
+    newItems[newItems.findIndex((x) => x.id === item.id)] = item;
 
     onUpdate({ ...model, items: newItems });
   }
