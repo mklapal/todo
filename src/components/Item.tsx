@@ -52,7 +52,7 @@ const Item: React.FC<Props> = ({ model, onChange, onDelete }) => {
       {edit === true ? (
         <>
           <input
-            className="p-1 text-black outline-none border px-2 py-0"
+            className="p-1 text-black outline-none border px-2 py-0 mr-auto"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />

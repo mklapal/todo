@@ -64,7 +64,7 @@ const List: React.FC<Props> = ({ model, onUpdate, onDelete }) => {
   }
 
   return (
-    <div className="float-left min-w-60 max-w-80 min-h-80 m-5 text-left border border-blue-800 flex flex-col justify-between">
+    <div className="flex sm:mx-5 md:float-left min-w-60 md:max-w-80 min-h-80 mx-auto my-5 md:m-5 text-left border border-blue-800 flex flex-col justify-between">
       <div className="bg-blue-800 p-2">
         {edit === true ? (
           <div className="flex justify-between gap-2 items-center">

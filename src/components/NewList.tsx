@@ -28,7 +28,9 @@ const NewList: React.FC<Props> = ({ onCreate }) => {
   return (
     <div className="flex">
       <div className="bg-blue-500 flex m-auto py-5 px-5">
-        <div className="text-white px-5 m-auto">Create new list</div>
+        <div className="hidden md:visible text-white px-5 m-auto">
+          Create new list
+        </div>
 
         <input
           className="p-2 h-[40px] outline-none"

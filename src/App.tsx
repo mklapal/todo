@@ -38,8 +38,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="flex flex-row justify-between bg-gray-700 items-center">
-        <div className="text-xl font-bold text-white ml-5">
+      <header className="flex flex-col md:flex-row justify-between bg-gray-700 items-center">
+        <div className="text-xl font-bold text-white my-5 md:m-0 md:ml-5">
           TODO lists in React / Michal Klapal
         </div>
         <NewList onCreate={listCreate} />

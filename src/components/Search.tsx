@@ -13,8 +13,8 @@ const Search: React.FC<Props> = ({ onSearch }) => {
   }
 
   return (
-    <div className="flex fixed right-0">
-      <div className="bg-blue-200 flex m-0 ml-auto py-5 pr-5 pl-5">
+    <div className="flex md:fixed md:right-0">
+      <div className="bg-blue-200 flex m-auto md:m-0 md:ml-auto py-5 pr-5 pl-5">
         <input
           className="p-2 h-[40px] outline-none"
           placeholder="Search"
